@@ -1,17 +1,8 @@
-# Default profile: this will apply to all the profiles
 server:
-  servlet:
-    context-path: /m2
-  port: 1988
-
-service:
-  name: M2
-  startDate: 1988-01-01
-  town: JHB
-  province: Gauteng
+  port: 1969
 
 management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: "*"
