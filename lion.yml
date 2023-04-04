@@ -9,15 +9,3 @@ management:
     web:
       exposure:
         include: "*"
-
-resilience4j:
-    circuitbreaker:
-        instances:
-            CircuitBreakerService:
-                automatic-transition-from-open-to-half-open-enabled: true
-                failure-rate-threshold: 50
-                minimum-number-of-calls: 5
-                permitted-number-of-calls-in-half-open-state: 3
-                sliding-window-size: 10
-                sliding-window-type: count_based
-                wait-duration-in-open-state: 5s
