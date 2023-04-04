@@ -2,7 +2,7 @@ server:
   port: 1964
 
 service:
-  vendor: Lion
+  vendor: Lion2
 
 management:
   endpoints:
