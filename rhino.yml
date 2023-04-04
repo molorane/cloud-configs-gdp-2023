@@ -1,6 +1,9 @@
 server:
   port: 1969
 
+service:
+  vendor: Rhino
+
 management:
   endpoints:
     web:

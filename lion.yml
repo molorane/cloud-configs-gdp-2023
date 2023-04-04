@@ -1,6 +1,9 @@
 server:
   port: 1964
 
+service:
+  vendor: Lion
+
 management:
   endpoints:
     web:
