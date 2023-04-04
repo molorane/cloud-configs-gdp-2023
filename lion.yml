@@ -5,7 +5,15 @@ service:
   vendor: Lion2
 
 management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
+    endpoint:
+        health:
+            show-details: always
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+    health:
+        circuitbreakers:
+            enabled: true
+        ratelimiters:
+            enabled: true
